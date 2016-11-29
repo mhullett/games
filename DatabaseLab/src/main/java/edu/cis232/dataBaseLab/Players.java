@@ -24,6 +24,7 @@ public class Players {
 			
 			ResultSet result = stmt.executeQuery(sql);
 			
+			//String sql ="SELECT  "
 			System.out.println("Games found:" );
 			System.out.println("------------");
 			

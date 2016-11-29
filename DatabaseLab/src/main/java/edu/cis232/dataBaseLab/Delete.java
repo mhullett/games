@@ -24,6 +24,7 @@ public class Delete {
 			prodNum = kb.nextLine();
 			removeProduct(prodNum, conn);
 			//testMe(conn);
+			System.out.println(prodNum +"Was removed.");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -35,6 +36,8 @@ public class Delete {
 		String query = String.format("DELETE FROM GAMES WHERE ID = '%s';",prodNumber);
 		stmt.executeUpdate(query);
 	}
+	
+	
 //	public static void testMe(Connection conn) throws SQLException{
 //		Statement stmt = conn.createStatement();
 //		String query = "SELECT * FROM GAMES;";
